@@ -108,13 +108,9 @@ exitLoop = false;
 for (var x = 0; x <= maximumNonce && !exitLoop; x++) {
         nonce = x;
         var stringi = block + "" + nonce + "" + data + "" + previous;
-        // console.log(stringi);
+        
         var bruteforce = CryptoJS.SHA256(stringi).toString();
-        // console.log(bruteforce);
-
-        // console.log(bruteforce.substr(0, difficulty) + " vs " + pattern)
-
-        // if (bruteforce.substr(0, difficulty) === pattern.toString()) {
+        
         if (bruteforce.startsWith(pattern.toString())) {
                 console.log("================== FOUND IT ===============");
                 console.log("THE NONCE IS: " + nonce);
