@@ -16,5 +16,5 @@ Instructions:
 - wait
 
 
-Any faster or more efficient ways of doing this are left as an exercise to the reader.
+Any faster or more efficient ways of doing this are left as an exercise to the reader. There are several ways of optimizing this significantly.
 
